@@ -1,0 +1,41 @@
+body {
+    background: #F6F6F6;
+    font-size: 18px;
+    line-height: 1.5;
+    margin: 5%;
+}
+
+.headersize header{
+    font-size: 20px;
+}
+
+img {
+    float: right;
+    margin-left: 10px;
+}
+
+p { 
+    font-family: Georgia, Times, "Times New Roman", serif; 
+    color: #05080C;
+}
+
+header {
+    border-top: 5px solid #222222;
+}
+
+th {
+    background: #222222;
+    color: white;
+}
+
+td {
+    background: #eeeeee;
+}
+
+body {
+    border-bottom: 5px solid #222222;
+    line-height: 1.5;   
+}
+
+
+
