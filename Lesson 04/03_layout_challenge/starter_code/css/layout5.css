@@ -1,0 +1,67 @@
+
+.exerciseFooter, .exerciseMain {
+    margin: 0 10px 10px 10px;
+}
+
+.exerciseHeader {
+    display: flex;
+}
+
+.exerciseHeaderLogo {
+    width: 200px;
+    height: 80px;
+
+}
+
+.exerciseHeaderNav {
+    width: 100%;
+}
+
+.exerciseHeaderNav ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    gap: 5px;
+}
+
+.exerciseHeaderNav ul li {
+    width: 100%;
+}
+
+
+/* Main */
+
+.exerciseMain {
+    display: flex;
+    gap: 10px;
+}
+
+.exerciseMainLeftNav {
+    flex-direction: row;
+    width: 50%;
+}
+
+.exerciseMainContent {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    width: 100%;
+}
+
+.exerciseMainContent > * {
+    margin: 0;
+}
+
+.exerciseMainContentBanner {
+    flex: 100%;
+
+}
+
+.exerciseMainContentSubBanner {
+    flex: 75%;
+
+}
+
+.exerciseMainContentBlock {
+    flex: 25%;
+}

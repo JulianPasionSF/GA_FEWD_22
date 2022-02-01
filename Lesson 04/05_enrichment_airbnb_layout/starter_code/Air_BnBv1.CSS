@@ -1,0 +1,70 @@
+/*BODY AND MAIN STYLE*/
+body {
+    background-color: #ebefec;
+}
+
+body {
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    justify-content: center;
+}
+
+main {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+/*HEADERS AND SUBHEADER STYLES*/
+
+h1, h2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.subheader_2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.subheader_3 {
+    display: flex;
+    justify-content: center; 
+}
+
+.text_3 {
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+
+/*IMAGE STYLES*/
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.toprowpictures ul{
+    display: flex;
+    list-style: none;
+    align-content: stretch;
+    gap: 5px;
+}
+
+.toprowpictures li{
+    display: flex;
+    align-content: stretch;   
+    justify-content: center;
+}
+
+.bottomrowpictures ul{
+    display: flex;
+    list-style: none;
+    gap: 5px; 
+}
+
+.bottomrowpictures li{
+    display: flex;
+    align-content: stretch; 
+    justify-content: center;  
+}

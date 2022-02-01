@@ -1,0 +1,150 @@
+/* ################################################## */
+/* ########### Global classes / overrides ########### */
+/* ################################################## */
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  padding: 15px 0;
+}
+
+/* Fonts, classes are so I can reuse the styles on a variety of elements */
+.merriweather { font-family: 'Merriweather', serif; }
+      .oswald { font-family: 'Oswald', sans-serif; }
+        .lato { font-family: 'Lato', sans-serif; }
+
+/* Colors and Style*/
+
+body {
+  background: black;
+}
+
+.top-header h1 {
+  color:#f2ff00;
+}
+
+
+.top-header ul {
+  color: white;
+
+}
+
+.nav-box .nav-item1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+.nav-box .nav-item2 {
+  font-family: 'Lato', sans-serif;
+}
+
+.maincontent-body-2 .main-middle-content {
+  font-family: 'Lato', sans-serif; 
+}
+
+footer {
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+
+u {
+  color: #f2ff00;
+}
+
+.underline {
+  border-bottom: 5px solid #f2ff00;
+}
+
+/* Dark yellow: #f2ff00 */
+/* Lighter yellow: #ffd900 */
+/* Light gray: #adadad */
+/* Medium gray: #878787 */
+
+/* Background Image */
+/* https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg */
+
+.top-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 10px #f2ff00;
+}
+
+.nav-box ul {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+
+}
+
+.maincontent-header-1 {
+  display: flex;
+  justify-content: center;
+  font-family: 'Oswald', sans-serif;
+  background-color:#adadad;
+}
+
+
+.maincontent-body-2 {
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg");
+  display: flex;
+  background-size: cover;
+  min-height: 80%;
+
+}
+.maincontent-body-2 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.maincontent-body-2 .main-middle-content {
+  margin: 25px 25px 25px 0;
+  padding: 25px;
+  width: 380px;
+  height: 230px;
+  padding: 4%;
+  background-color: rgba(255,255,255,0.9);
+  box-shadow: 0 0 5px rgba(0,0,0,.75);
+}
+
+.maincontent-body-2 .main-middle-content .CTA-button{
+  display: flex;
+  justify-content: center;
+  background-color: #f2ff00;
+  font-size: 25px;
+  font-family:'Oswald', sans-serif;
+}
+
+.maincontent-bottom-3 {
+  color: white;
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.maincontent-bottom-3 .bottombox1, 
+.maincontent-bottom-3 .bottombox2, 
+.maincontent-bottom-3 .bottombox3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color: black;
+  background-color: white;
+  font-family: 'Merriweather', serif;
+  padding-top: 10px;
+  padding-left: 10px ;
+  padding-right: 10px;
+  padding-bottom: 15px;
+}
+
+.maincontent-bottom-3 .CTA-button-2 {
+  display: flex;
+  justify-content: center;
+  background-color: #878787;
+  font-size: 25px;
+  font-family: 'Oswald', sans-serif;
+  border-radius: 10px;
+}
+
+
