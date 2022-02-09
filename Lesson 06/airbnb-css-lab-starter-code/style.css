@@ -1,0 +1,163 @@
+body {
+  font-family: 'Nunito', Arial, sans-serif;
+  font-size: 12px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+.airbnb_site_header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.airbnb_siteheader_logo {
+  max-width: 200px;
+  max-height: 50px;
+  margin-left: 40px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.airbnb_siteheader_sitenav ul {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;  
+  align-items: center;
+}
+
+.airbnb_siteheader_sitenav ul a {
+  color: black;
+  font-weight: 900;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+/*button style*/
+.btn,
+.btn:visited {
+  color: white;
+  background-color: #ff5358;
+  font-size: 20px;
+  padding: 20px 40px;
+  margin: 10px auto;
+  display: block;
+  width: 220px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+/*button hover*/
+.btn:hover  {
+color: white;
+background-color: #e00007;
+}
+
+
+.airbnb_herobox {
+  width: 100%;
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  background-image: url(melbourne.jpg);
+  background-color: grey;
+  background-size: cover;
+  justify-content: center;
+}
+
+.airbnb_herobox_textbox {
+max-width: 500px;
+}
+
+.airbnb_herobox_textbox h1,
+.airbnb_herobox_textbox p   {
+  color: white;
+  display: block;
+  width: 100%;
+  font-weight: 900;
+  text-align: center;
+}
+
+.airbnb_herobox_textbox p {
+  font-size: 40px;
+}
+
+.airbnb_resident_comments {
+  background-color: #efefef;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: space-around;
+  padding: 40px;
+  gap: 40px;
+}
+
+.airbnb_resident_comments article {
+  background-color: white;
+  border: 1px solid #dbdbdb;
+  display: grid;
+  grid-template-columns: 1fr 8fr;
+  align-items: center;
+}
+
+.airbnb_resident_comments article h1 {
+  background-color: #efefef;
+  padding: 10px 20px;
+  font-weight:900;
+  font-size: 16px;
+  grid-column: span 2;
+}
+
+.airbnb_resident_comments article img {
+  margin: 20px;
+}
+
+.airbnb_resident_comments article p {
+  margin-top: 20px;
+  margin-right: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.airbnb_featured_neighborhoods {
+
+}
+
+.airbnb_featured_neighborhoods > * {
+  text-align: center;
+}
+
+.airbnb_featured_neighborhoods_tricol {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  padding: 40px;
+  text-align: left;
+}
+
+.airbnb_featured_neighborhoods > h1 {
+  font-size: 30px;
+  font-weight: 70;
+}
+
+.airbnb_featured_neighborhoods  > p {
+  font-size: 14;
+  font-weight: 700;
+  margin-top: 7px;
+}
+
+/* Colors */
+/* Redish / Pink: #ff5358 */
+/* Dark red for button hover: #e00007 */
+/* Very light gray for backgrounds: #efefef */
+/* Very light gray for borders: #dbdbdb */
+/* Dark gray for footer: #0e0f0f */
+/* White for text and backgrounds: #FFFFFF */
+
+
+/* Background image links */
+/* Hero: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/melbourne.jpg */
+/* Fitzroy: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/fitzroy.jpg */
+/* St. Kilda: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/st-kilda.jpg  */
+/* CBD: https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/central-business-district.jpg */

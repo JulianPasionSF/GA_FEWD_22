@@ -1,0 +1,57 @@
+
+.exerciseFooter, .exerciseMain {
+    margin: 0 10px 10px 10px;
+}
+
+.exerciseHeader {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.exerciseHeaderLogo {
+    width: 200px;
+    height: 80px;
+
+}
+
+.exerciseHeaderNav {
+
+}
+
+.exerciseHeaderNav ul {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    list-style: none;
+}
+
+.exerciseHeaderNav ul li {
+
+
+}
+
+
+/* Main */
+
+.exerciseMain {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.exerciseMainLeftNav {
+
+}
+
+.exerciseMainContent {
+
+}
+
+.exerciseMainContent > * {
+    margin: 0;
+}
+
+.exerciseMainContentSubBanner
+
+.exerciseMainContentBlock {
+display: grid;
+grid-auto-columns: 1fr 1fr;
+}

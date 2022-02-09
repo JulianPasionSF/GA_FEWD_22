@@ -29,7 +29,6 @@ body {
 
 .top-header ul {
   color: white;
-
 }
 
 .nav-box .nav-item1 {
@@ -75,7 +74,6 @@ u {
   display: flex;
   list-style: none;
   gap: 8px;
-
 }
 
 .maincontent-header-1 {
@@ -84,7 +82,6 @@ u {
   font-family: 'Oswald', sans-serif;
   background-color:#adadad;
 }
-
 
 .maincontent-body-2 {
   background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/2522641/coworking.jpg");
