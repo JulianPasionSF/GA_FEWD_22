@@ -10,7 +10,7 @@ function computerChoice() {
     computerChoiceInt = Math.ceil(computerChoiceInt);
     console.log(computerChoiceInt);
     
-//assign values: rock papaer or  scissors to 1 2 or 3
+//assign values: rock papaer or  scissors to 1, 2, or 3
         if(computerChoiceInt == 1){
                 return "rock";
         }
@@ -31,13 +31,15 @@ function compare(me, opponent) {
     if(me == opponent){
         //tie
         winner= "tie";
-    }else if(me == "rock"){
-            //opponent 
+    }
+    else if(me == "rock"){
+        //opponent 
             if(opponent == "paper"){
                 winner= "opponent";}
-                else {winner= "me";}
-    }else if(me == "paper"){
-             if(opponent == "scissors"){
+            else {winner= "me";}
+    }
+    else if(me == "paper"){
+            if(opponent == "scissors"){
                 winner= "opponent";}
             else{winner= "me"}
         }
@@ -53,10 +55,12 @@ function compare(me, opponent) {
         //output to screen
         document.querySelector('#computerSelection').innerText =opponent;
         if(winner == 'me'){
-            document.querySelector('#decision').innerText = 'I WON!';
-        }else if(winner == 'opponent'){
+            document.querySelector('#decision').innerText = 'Computers suck, humans FTW!!';
+        }
+        else if(winner == 'opponent'){
             document.querySelector('#decision').innerText = 'The computer won =(';
-        }else {
+        }
+        else {
             document.querySelector('#decision').innerText = 'Its a Tie, Yay!';
         }
     };
