@@ -1,0 +1,137 @@
+/*Color Pallete*/
+body {
+    background: #e4e6c3;
+    font-family: 'Chakra Petch', sans-serif;
+}
+
+/* Font */
+
+    /* font-family: 'Roboto','sanserif'; */
+    /* color: black; */
+
+
+/*Text Styling*/
+/* Header */
+.logo {
+    font-size: 3rem;
+    font-weight: 5rem;
+    padding-left: 1rem;
+}
+
+.upperheader a{
+    text-decoration: none;
+    color: #222725;
+}
+
+li{
+    list-style: none;
+}
+
+.nav-item a{
+    text-decoration: none;
+    color: #222725;
+}
+
+/*##########Layout Styling################*/
+
+/* Header with logo and nav bar */
+.upperheader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-bar {
+    padding-right: 3rem;
+}
+
+.nav-list {
+    display: flex;
+    gap: 10px;
+}
+
+/* Content Gallery Layout Styling */
+.MainContentGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    gap: 5px;
+}
+
+
+/* ############ MainPage ContentBoxes ######################*/
+.GalleryItem {
+    min-height: 35rem;
+}
+
+.GalleryItem img{
+    max-height: 400px;
+}
+
+.GalleryItem {
+    background: black;
+    color: #f7f7f2;
+}
+
+.ContentBox1 {
+    background-image: url(../Photography/GeorgeFloydProtest.jpg);
+    background-size: cover;
+    background-repeat: none;
+
+}
+
+.ContentBox2{
+    
+}
+.ContentBox2 h1{ 
+    size: 5rem;
+}
+
+.ContentBox2 a{
+    text-decoration: none;
+}
+
+.ContentBox2 a,
+.ContentBox2 p{
+    size: 3rem;
+}
+
+
+.ContentBox3{
+
+}
+
+.ContentBox4{
+    background-image: url(../Photography/LowRiderCarMeetUp.jpg);
+    background-size: cover;
+    background-repeat: none;
+    
+}
+
+.ContentBox5{
+    background-image: url(../Photography/HuniAfterPutt.jpg);
+    background-size: cover;
+    background-repeat: none;
+}
+.ContentBox6{
+    
+}
+
+/* photography css */
+
+.carousel-inner {
+
+    padding: 0rem 3rem;
+}
+
+.carousel-item {
+    max-height: 35rem;
+
+}
+
+.ArtsyArturo {
+    background-image:url(../Photography/ArtsyArturo.jpg);
+    background-size: cover;
+    background-repeat: none;
+
+}

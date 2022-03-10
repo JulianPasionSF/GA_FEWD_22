@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function(event){
     // Create a function that runs whenever the submit button is clicked
 
     function processTheMood(e) {
-        console.log("imhere");
+        console.log("im working");
 
         //prevent the submit button from refreshing the page
 e.preventDefault();

@@ -17,6 +17,6 @@ function turnItwhite(){
 
 //listen for gray button
 
-document.querySelector(#graybutton).addeventlistener("click",grayMode);
+document.querySelector('#grayButton').addEventListener("click",turnItGray);
 
-document.querySelector(#whiteButton).addeventlistener("click",whiteMode);
+document.querySelector('#whiteButton').addEventListener("click",turnItwhite);

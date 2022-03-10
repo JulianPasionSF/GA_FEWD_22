@@ -32,6 +32,8 @@ document.getElementsByClassName('class-name-here')[0]; // returns the first elem
 
 // basic text and style manipulation/############## JULIAN READ THIS##############/ 
 const ga = document.getElementById('ga');
+
+
 ga.textContent = "look at me using JS!"; // applies text to an element
 ga.style.backgroundColor = "red" // applies a style to the page, must access style property, then CSS property written in camelCase
 ga.classList.add('blue'); // adds the class 'blue' to an element
@@ -41,10 +43,12 @@ ga.classList.toggle('class-name'); // toggles a class on and off of an element
 const newParagraph = document.createElement("p") // creates an HTML element of the given tag type
 newParagraph.innerText = "hi im just a child"
 document.body.appendChild(newParagraph); // adds a child HTML element to the body of the page
+
 const greatDiv = document.createElement('div') // creates a div 
 greatDiv.style.border = "2px solid gold";
 greatDiv.innerHTML = '<p>something great goes here</p>'; // sets the inner content of the div
 document.body.appendChild(greatDiv); // adds the div to the end of the body of the page
+
 const greatChild = document.createElement("p"); // creates a p tag
 greatChild.id = "child-element";
 greatChild.innerText = "I'm inside the greatest div of all"; // sets the text of the p tag

@@ -1,0 +1,15 @@
+/* Featured and Expanded Item */
+
+/* * There should be an animation for the transition (suggest making it short, such as 0.15s, and use an easing function) */
+
+.trulia-grid-item {
+    cursor: pointer;
+    transition: ease-in-out(00.15s);
+}
+
+.trulia-featured-grid-item {
+    grid-column: span 2;
+    grid-row: span 2;
+    height: 100%;
+    min-height: 320px
+}

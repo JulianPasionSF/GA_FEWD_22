@@ -1,0 +1,181 @@
+/*
+ * Lay this page out - make it responsive, use grid, flex, position and media queries where needed.
+ *
+ * Colors-
+ * Green: #14a96d
+ * Dark Green: #0d784d
+ * White: #fff
+ * Light gray: #f4f5f6
+ * Border gray: #cfd7de
+ * Dark text: #1b1f23
+ * Lighter text: #66727c
+ * Blue for links: #06748a
+ * Blue for hovered links: #033641
+ */
+
+/* Globals */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  color: #1b1f23;
+  margin:0;
+  height:auto;
+  display:block;
+  width:100%;
+  overflow-x:hidden;
+}
+
+/*Logo Styling*/
+
+
+/*Header and Navigation Styling*/
+.container_outer {
+  width: 100%;
+  margin: 0;
+  display: block;
+}
+.container_fixed {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.site_header {
+
+}
+
+.site_header ul{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.site_header ul li{
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*header link styling*/
+.site_header a,
+.site_header  a:visited{
+ color: #1b1f23;
+ text-decoration: none;
+/*a rem is 1:1 of the body text, in this case the body text is 18px's so 1.5 rem is equal to 27px's*/
+ font-size: 1.5rem;
+}
+
+/*navigation burger icon*/
+
+.site_header .burger{
+  display: none;
+}
+
+/*ROVER logo layout styling*/
+.site_header .logo{
+  padding-right: 40px;
+  margin: 0;
+}
+
+/*ROVER logo height styling*/
+.site_header .logo img {
+  max-height: 65px;
+}
+
+.site_header_inner{
+  display: flex;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.site_header_inner ul,
+.navigation ul{
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Hero container line 45 */
+
+
+.rover_hero_container {
+  width: 100%;
+  margin:0px;
+  background-image: url("../img/hero.jpg");
+  background-size: cover;
+  background-position: top;
+  overflow: hidden;
+  /* use min height so that if the text within rover hero container has to grow the background image is visible fully*/
+}
+
+.rover_hero_container .container_fixed{
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  min-height: 36rem;
+}
+
+.hero_callout {
+  color: #66727c;
+  max-width: 50%;
+  padding-left: 2rem;
+}
+
+.hero_callout h1{
+  font-size: 3rem;
+}
+
+.hero_callout > *:first-child {
+  margin: 0;
+  padding: 0;
+}
+
+.hero_tagline {
+  font-size: 1.5rem;
+}
+
+.container_fixed{
+
+}
+
+@media (max-width: 960px) {
+      .hero_callout{
+        background: white;
+        padding: 1rem;
+          }
+  
+}
+/* Button */
+
+.rover-cta {
+  margin: 0;
+  padding: 0 ;
+  display: inline-block;
+}
+
+.btn {
+  display: block;
+  margin: 0;
+  padding: 1.2rem;
+  background: #14a96d;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
+  min-width: 12rem;
+  text-align: center;
+}
+
+/* when creating the hover feature you only need to change what is different or changing, in this case it is just the background of the button that is getting darker when the the cursor is hovered over it */
+.btn:hover {
+  background-color: #0d784d;  
+}
+
+/* Hero responsive styling - Media Query */
