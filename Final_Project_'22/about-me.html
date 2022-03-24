@@ -23,39 +23,44 @@
 </head>
 <body>
     <header class="upperheader">
-        <div class="logo"><a href="./index.html">Pasion Project</a></div>
+        <div class="logo"><a href="./intro.html">Pasion Project</a></div>
         <nav class="nav-bar">
-            <ul class="nav-list">
+            
+            <a class="nav-item nav-item-toggle" href="#">&#9776;</a>
+
+            <ul class="nav-list mobile-hide">
                 <li class="nav-item"><a href="./index.html"><i class="fa-solid fa-dungeon"></i> Home</a></li>
                 <li class="nav-item"><a href="./photography.html"><i class="fa-solid fa-camera-retro"></i> Photography</a></li>
                 <li class="nav-item"><a href="./coding-projects.html"><i class="fa-solid fa-code"></i> Coding</a></li>
                 <li class="nav-item"><a href="./about-me.html"><i class="fa-solid fa-person-hiking"></i> About Me</a></li>
-                <li class="nav-item"><a href="./contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
-<body>
-    <header class="upperheader">
-        <div>Pasion Project</div>
-        <nav class="nav-bar">
-            <ul class="nav-list">
-                <li class="nav-item"><a href="./index.html">Projects</a></li>
-                <li class="nav-item"><a href="./about-me.html">About Me</a></li>
-                <li class="nav-item"><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+
+<section class="">
 <main>
-<article>
+
+<div class="DescriptionMain">
+<article class="DescriptionMain-AboutME">
     <h1>About Me</h1>
-    <p>My name is Julian Pasion and I am a 26 year old marketing specialist and aspiring front end web developer from San Francisco, CA. When I’m behind the computer I’m helping execute email campaigns and maintaining the look and functionality of websites. Outside of my at-home office, I’m traveling across the US for paintball tournaments or road tripping with my girlfriend and our dog Katsu.</p> 
+    <p>My name is Julian Pasion and I am a 26 year old marketing specialist and aspiring web developer from San Francisco, CA. When I’m behind the computer I’m helping execute email campaigns and maintain the look and functionality of websites. Outside of my at-home office, I’m traveling across the US for paintball tournaments or road tripping with my girlfriend and our dog Katsu.</p> 
     <p>The website you are visiting today was fully built by myself while taking the General Assembly Front End Web Developer course this year. It incorporates HTML, CSS and Javascript in order to demonstrate all that we’ve learned over the last 10 weeks.</p>
 </article>
 
-<article id="factsCharacteristics" class="factsAccordionCollapsed">
+<article class="DescriptionMain-AboutME-Picture">
+    <image src="./Photography/BaliMonkey.jpeg" class="AboutMePicture">
+</article>
+</div>
+
+<section class="aboutMeLowerContent">
+<article>
+    <h1>Some quick answers to debatable questions</h1>
+</article>
+
+<article id="factsCharacteristics" class="factsAccordionClose expando">
         <header>
-    <a href="#" class="toggleClose"><i href="#" class="fa-solid fa-caret-right"></i></a>
-    <a href="#" class="toggleOpen"><i href= "#" class="fa-solid fa-caret-down"></i></a>
+            <a href="#" class="toggleClose"></a> 
+            <a href="#" class="toggleOpen"></a> 
     <h2>Is there a go-to podcast you listen to on extra long drives?</h2>
         </header>
     <div class="dropDownContent">
@@ -63,7 +68,54 @@
     </div>
 </article>
 
+<article id="factsCharacteristics3" class="factsAccordionClose expando">
+    <header>
+        <a href="#" class="toggleClose"></a> 
+        <a href="#" class="toggleOpen"></a> 
+<h2>Does pineapple go on pizza?</h2>
+    </header>
+<div class="dropDownContent">
+    <p>Definitely not</p>
+</div>
+</article>
+
+<article id="factsCharacteristics4" class="factsAccordionClose expando">
+    <header>
+        <a href="#" class="toggleClose"></a> 
+        <a href="#" class="toggleOpen"></a> 
+<h2>What’s a TV series you could never get tired of watching?</h2>
+    </header>
+<div class="dropDownContent">
+    <p>The Office</p>
+</div>
+</article>
+
+<article id="factsCharacteristics5" class="factsAccordionClose expando">
+    <header>
+        <a href="#" class="toggleClose"></a> 
+        <a href="#" class="toggleOpen"></a> 
+<h2>Where is the best place to get a burrito in San Francisco?</h2>
+    </header>
+<div class="dropDownContent">
+    <p>El Faralito's on Mission Street</p>
+</div>
+</article>
+
+<article class="ContactInformation">
+    <h1>Contact Information</h1>
+        <ul>
+            <li>LinkedIn URL www.linkedin.com/in/julian-pasion-03a2078a</li>
+            <li>URL https://github.com/JulianPasionSF</li>
+        </ul>
+</article>
+
+
+</section>
 </main>
+
 <script src="./JS/index.js"></script>
 </body>
+
+<footer class="theseAreTheFeet">
+    "Do or do not there is no try" - Yoda</footer>
 </html>

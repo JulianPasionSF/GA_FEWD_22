@@ -23,18 +23,88 @@
 </head>
 <body>
     <header class="upperheader">
-        <div class="logo"><a href="./index.html">Pasion Project</a></div>
+        <div class="logo"><a href="./intro.html">Pasion Project</a></div>
         <nav class="nav-bar">
-            <ul class="nav-list">
+            
+            <a class="nav-item nav-item-toggle" href="#">&#9776;</a>
+
+            <ul class="nav-list mobile-hide">
                 <li class="nav-item"><a href="./index.html"><i class="fa-solid fa-dungeon"></i> Home</a></li>
                 <li class="nav-item"><a href="./photography.html"><i class="fa-solid fa-camera-retro"></i> Photography</a></li>
                 <li class="nav-item"><a href="./coding-projects.html"><i class="fa-solid fa-code"></i> Coding</a></li>
                 <li class="nav-item"><a href="./about-me.html"><i class="fa-solid fa-person-hiking"></i> About Me</a></li>
-                <li class="nav-item"><a href="./contact.html"><i class="fa-solid fa-phone"></i> Contact</a></li>
             </ul>
         </nav>
     </header>
 <body>
+    <section class="MainContentGallery">
+
+        <!-- Card 1 -->
+        
+            <article class="RPSDescription CodingGalleryItem CodingPageItem1">
+                <h1>Rock Paper Scissors</h1>
+                <p>The goal of this exercise was to demonstrate the understanding of JavaScript and how we can use basic logic rules to create a simple rock paper scissor game. To start the human user chooses either a rock, paper or scissor option. Then the computer is assigned a random value. Depending on the value the computer was given at random, a winner is determined with and if, else if or else statement. </p>
+            </article>
+        
+        
+        <!-- Card 2 -->
+            <article class="ContentBox2 CodingGalleryItem CodingPageItem2">
+                <div class="innerContent-PlayerSelection InnerContentBox2">
+              <h1>Player Selection:</h1>
+              <a href="#" class="gameButton" id='scissors'>scissors  <i class="fa-solid fa-hand-peace"></i></a>
+              <a href="#" class="gameButton" id='paper'>paper <i class="fa-solid fa-hand"></i></a>
+              <a href="#" class="gameButton" id='rock'> rock <i class="fa-solid fa-hand-fist"></i></a>
+                </div>
+                
+                <div class="innerContent-ComputerSelection InnerContentBox2">
+          <div class="playAreaResults">
+            <h1>Computer Selection: <strong id="computerSelection"></strong></h1>
+              <p>Result: </p>
+              <p id='decision'>Result</p>
+          </div>
+                </div>
+            </article>
+        
+        <!-- Card 3 -->
+            <article class="ContentBox3 CodingGalleryItem CodingPageItem3">
+                <ul id="lightSwitch">
+                    <li id="switchOn"><i class="fa-solid fa-toggle-on"></i>Switch On</li>
+                    <li id="switchOff"><i class="fa-solid fa-toggle-off"></i>Switch Off</li>
+                </ul>
+            </article>
+        
+        <!-- Card 4 -->
+            <article class=" CodingGalleryItem CodingPageItem4">
+                <h1>The Light Switch <i class="fa-solid fa-lightbulb"></i></h1>
+                <p>In this box I used another simple JavaScript program to change the background of the box to replicate the turning on and off of a light switch in a room. By using JavaScript to toggle the class of the HTML I was able to add and remove the background of the box which is the light bulb.</p>
+            </article>
+        
+        <!-- Card 5 -->
+            <article class=" CodingPageItem5 CodingGalleryItem">
+                <h1>Choose A Color <i class="fa-solid fa-palette"></i></h1>
+                <p>If you choose a main color to the right it will change the entire box’s background that color. I did this by using an HTML input in a form tag to get the value from the user. Once the value is submitted a JavaScript program validates the value and trims the letters so they are lowercase and no matter what the user types in it will always return the right formatting. Once the value is submitted and processed the background color changes to the according color.</p>
+            </article>
+        
+        <!-- Card 6 -->
+        <article class="CodingPageItem6 CodingGalleryItem">
+            <div class="Colorbox">
+            <div class="ColorSubmitform">
+                <form>
+                    <input type="text" id="color" placeholder="Enter A Main Color">
+                    <input type="submit" value="Update" id="color-submit">
+                </form>
+            </div>
+            </div>
+        </article>
+        
+        </section>
+        
+        <footer>
+            "Do or do not there is no try - Yoda"</footer>
+        
+        <!-- Javascript -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./JS/index.js"></script>
     
 </body>
 </html>

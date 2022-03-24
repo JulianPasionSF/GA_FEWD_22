@@ -4,6 +4,11 @@ body {
     font-family: 'Chakra Petch', sans-serif;
 }
 
+footer {
+   text-align: center;
+   margin-bottom: 0;
+}
+
 /* Font */
 
     /* font-family: 'Roboto','sanserif'; */
@@ -32,6 +37,49 @@ li{
     color: #222725;
 }
 
+/* intro page */
+.introLogo a{
+    text-decoration: none;
+    color: #222725;
+}
+
+.introLogo h2{
+    size: 3rem;
+}
+
+.introBox {
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
+}
+
+.intro-nav-item {
+    display: block;
+    margin-left: 0px;
+}
+
+.intro-nav-item a{
+    text-decoration: none;
+    color: #222725;
+}
+
+/* ######## Home page ####### */
+.HomeIntroMessage {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    size: 10rem;
+    margin-left: 15rem;
+    margin-right: 15rem;
+    margin-top: 18rem;
+    margin-bottom: 30rem;
+}
+
+.HomeIntroMessage a{
+    text-decoration: none;
+    color: #222725;
+}
+
 /*##########Layout Styling################*/
 
 /* Header with logo and nav bar */
@@ -56,12 +104,15 @@ li{
     grid-template-columns: repeat(2, 1fr);
     grid-row: auto;
     gap: 5px;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 
 
 /* ############ MainPage ContentBoxes ######################*/
 .GalleryItem {
     min-height: 35rem;
+    border-radius: 1rem;
 }
 
 .GalleryItem img{
@@ -81,24 +132,52 @@ li{
 }
 
 .ContentBox2{
-    
+    display: flex; 
+    flex-direction: column; 
 }
+
+.InnerContentBox2 {
+    padding-top: 5rem;
+    padding-left: 5rem;
+}
+
+
 .ContentBox2 h1{ 
     size: 5rem;
 }
 
+
 .ContentBox2 a{
     text-decoration: none;
+    color: #e4e6c3;
+
 }
 
 .ContentBox2 a,
 .ContentBox2 p{
-    size: 3rem;
+    size: 5rem;
 }
 
 
 .ContentBox3{
+    background-repeat: none;
+    background-position: center;
+}
 
+#lightSwitch{
+    padding-top: 5rem;
+}
+#switchOn:hover {
+    color: #ffd60a;
+}
+
+#switchOff {
+    color: red;
+}
+
+.turnItOn{
+    background-image: url(../icons_and_logos/lightBulbOn.png);
+    background-color: black;
 }
 
 .ContentBox4{
@@ -114,24 +193,192 @@ li{
     background-repeat: none;
 }
 .ContentBox6{
-    
+}
+
+.green {
+    background: green;
+    transition: background-color 2s;
+    border-radius: 1rem;
+   }
+   
+.blue {
+    background: blue;
+    transition: background-color 2s;
+    border-radius: 1rem;
+   
+   }
+   
+.red {
+    background: red;
+    transition: background-color 2s;
+    border-radius: 1rem;
+   }
+
+.purple {
+    background-color: purple;
+    transition: background-color 2s;
+    border-radius: 1rem;
+}
+
+.pink {
+    background-color:pink;
+    transition: background-color 2s;
+    border-radius: 1rem;
+}
+
+.orange {
+    background-color: orange;
+    transition: background-color 2s;
+    border-radius: 1rem;
+}
+
+.ColorSubmitform {
+    margin-top: 5rem;
+    text-align: center;
+}
+
+
+.nav-item-toggle {
+    display: none;
+}
+
+@media  screen and (max-width: 1024px) {
+    .nav-bar{
+        height: auto;
+        }
+
+     .nav-item-toggle {
+         display: block;
+         margin-right: 3rem;
+         margin-top: 3rem;
+     }
+
+     .mobile-hide {
+         overflow: hidden;
+     }
+
+     .nav-list {
+         display: inline-block;
+         margin: 0;
+     }
+
+     .mobile-hide {
+         height: 0 ;
+         overflow: hidden;
+         width: 0;
+     }
+
+     .nav-item, .nav-item:visited {
+         display: block;
+     }
 }
 
 /* photography css */
 
-.carousel-inner {
+.photographyPage-MainContentGallery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row: auto;
+    gap: 5px;
+    padding: 0 4rem;
+} 
 
-    padding: 0rem 3rem;
+.card-body {
+    background-color: black;
+    color: #e4e6c3;
 }
 
-.carousel-item {
-    max-height: 35rem;
+@media screen and (max-width: 1024px) {
+
+    .photographyPage-MainContentGallery{
+    display: block;
+    }
+    
+}
+
+/*************** ABOUT ME page ******************************/
+
+.DescriptionMain {
+    display: flex;
+    justify-content: space-between;
+}
+
+.DescriptionMain-AboutME {
+    margin-top: 5rem;
+    margin-left: 7rem;
+    padding-right: 3rem;
+}
+
+.DescriptionMain-AboutME-Picture {
+    margin-right: 7rem;
+}
+
+.AboutMePicture {
+    max-height: 400px;
+}
+
+/* Accordion style */
+.factsAccordionClose .dropDownContent{
+    display: none;
+    cursor: pointer;
+}
+
+.factsAccordionClose h2 {
+    display: flex;
+    cursor: pointer;
 
 }
 
-.ArtsyArturo {
-    background-image:url(../Photography/ArtsyArturo.jpg);
-    background-size: cover;
-    background-repeat: none;
+.factsAccordionClose header {
+    display: flex;
+}
 
+.aboutMeMain {
+    padding-bottom: 3rem;
+}
+.aboutMeLowerContent {
+    margin-left: 5rem;
+}
+
+.ContactInformation {
+    margin-top: 6rem;
+}
+
+
+/* ********************************************* */
+
+/* ******************** Coding page style ******************** */
+
+.RPSDescription {
+    padding-left: 1rem;
+    padding-top: 3rem;
+}
+
+.CodingGalleryItem {
+    min-height: 35rem;
+    border-radius: 1rem;
+}
+
+.CodingPageItem1 h1,
+.CodingPageItem4 h1,
+.CodingPageItem5 h1{
+    font-size: 4rem;
+}
+
+.CodingPageItem2 {
+    background-color: black;
+    color: #e4e6c3;
+}
+
+.CodingPageItem3 {
+    background-color: black;
+}
+
+.CodingPageItem4 {
+    padding-top: 2rem;
+}
+
+
+.CodingPageItem6 {
+    background-color: black;
 }
